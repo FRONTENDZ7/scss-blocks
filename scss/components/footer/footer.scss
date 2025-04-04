@@ -83,6 +83,12 @@
         flex-direction: column;
         text-align: center;
     }
+    .payments::before{
+        margin-right: 3px;
+    }
+    .payments::after {
+        margin-left: 3px;
+    }
 }
 @media (max-width: 375px) {
     .contacts__link {
