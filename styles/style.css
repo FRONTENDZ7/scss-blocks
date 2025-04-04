@@ -759,9 +759,9 @@ header .header__popup-menu ul {
   line-height: 16px;
   color: #fff;
 }
-.footer__payments {
-  margin-left: 36px;
-  margin-right: 36px;
+.footer__payments a {
+  color: #c3c3c3;
+  gap: 7px;
 }
 .payments__item {
   font-weight: 400;

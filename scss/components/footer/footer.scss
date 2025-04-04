@@ -14,8 +14,10 @@
     }
     &__payments {
         @extend %extend-flex-centr;
-        margin-left: 36px;
-        margin-right: 36px;
+        a {
+            color: #c3c3c3;
+            gap: 7px
+        }
     }
     
     &__contacts {
