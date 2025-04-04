@@ -1,0 +1,94 @@
+.step {
+    &__item {
+        position: relative;
+        max-width: 208px;
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding: 0 10.5px;
+    }
+    &__circle {
+        margin-bottom: 20px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        width: 100px;
+        height: 100px;
+        border: 5px solid #286690;
+        border-radius: 50%;
+        background-color: #3e9cdc;
+    }
+    &__text {
+        margin: 0 0 6px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: #fff;
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+    }
+    &__dots {
+        position: absolute;
+        top: 48px;
+        right: -41%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    &__dot {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: #c4c4c4;
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 1055px) {
+    .step__item:nth-child(4) .step__dot {
+        display: none;
+    }
+}
+@media (max-width: 865px) {
+    .step__dots {
+        right: -47%;
+    }
+    .step__circle {
+        img {
+            width: 30%;
+        }
+    }
+    .step__text {
+        font-size: 14px;
+        margin: 0 0 15px;
+    }
+    .step__item:nth-child(3) .step__dot {
+        display: none;
+    }
+}
+@media (max-width: 659px) {
+    .step__dots {
+        display: none;
+    }
+}

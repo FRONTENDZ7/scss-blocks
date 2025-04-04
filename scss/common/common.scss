@@ -1,0 +1,26 @@
+html {
+	height: 100%;
+}
+body {
+    font-family: $default-font;
+    font-size: 15px;
+    height: 100%;
+}
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+main {
+    flex: 1 1 auto;
+}
+.container {
+    max-width: $content-width;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.open {
+    left: 0%;
+    transition: 1.5s;
+    transform: translateX(40%);
+}

@@ -1,0 +1,36 @@
+%extend-flex-centr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+%extend-flex-evenly-wrap {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+%extend-flex-baseline {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+%extend-flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+%extend-flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+%extend-flex-centr-gap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}

@@ -1,0 +1,104 @@
+header {
+    font-weight: bold;
+    text-transform: uppercase;
+    background: #10101D;
+    opacity: 0.9;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    .header__wrapper {
+        @extend %extend-flex-centr;
+        padding: 25px 0;
+        .header__logo {
+           img {
+            padding-right: 30px;
+           }
+        }
+    }
+    .header__navigation {
+        @extend %extend-flex-centr;
+        max-width: 437px;
+        width: 100%;
+        .header__nav-list {
+          @extend %extend-flex-centr;
+          width: 100%;
+        }
+        .header__nav-link {
+            font-size: 13px;
+            font-weight: 400;
+            color: #fff;
+            text-transform: uppercase;
+            text-decoration: none;
+            &:hover {
+              color: #43ABF0;
+            }
+        }
+    }
+    .header__burger {
+        cursor: pointer;
+        position: relative;
+        padding: 5px;
+        width: 30px;
+        height: 18px;
+        display: none;
+        span {
+            position: absolute;
+            top: calc(50% - 1px);
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #fff;
+            transition: all 0.2s;
+            &:first-child {
+                top: 0;
+            }
+            &:last-child {
+                top: auto;
+                bottom: 0;
+            }
+        }
+        &.active {
+            span {
+                transform: scale(0);
+                &:first-child {
+                    transform: rotate(-45deg);
+                    top: calc(50% - 1px);
+                }
+                &:last-child {
+                    transform: rotate(45deg);
+                    bottom: calc(50% - 1px);
+                }
+            }
+        }
+    }
+    .header__popup-menu {
+        position: absolute;
+        top: 84px;
+        right: -100%;
+        width: 55%;
+        height: 50vh;
+        overflow-y: auto;
+        background: #3D4050;
+        ul {
+          @extend %extend-flex-centr-gap;
+          padding-top: 20px;
+        }
+    }
+    @media (max-width: 768px) {
+        .header__nav-link {
+            color: lightblue;
+        }
+        .header__navigation {
+            display: none;
+        }
+        .header__burger {
+            display: block;
+        }
+    }
+    @media (max-width: 576px) {
+        .header__logo img {
+            max-width: 200px;
+            height: 30px;
+        }
+    }
+}

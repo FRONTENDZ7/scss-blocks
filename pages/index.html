@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../../scss-blocks/styles/style.css">
+	<title>test</title>
+</head>
+<body>
+	<div class="page-wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="header__wrapper">
+					<div class="header__logo">
+						<a href="#" class="header__logo-link">
+							<img src="../images/logo.svg" alt="">
+						</a>
+					</div>
+					<nav class="header__navigation">
+						<ul class="header__nav-list" id="nav-list">
+							<li><a href="#" class="header__nav-link">бизнес</a></li>
+							<li><a href="#" class="header__nav-link">о нас</a></li>
+							<li><a href="#" class="header__nav-link">цены</a></li>
+							<li><a href="#" class="header__nav-link">оформить заказ</a></li>
+						</ul>
+					</nav>
+					<div class="header__burger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					
+					<div class="header__popup-menu" id="popup-menu"></div>
+				</div>
+			</div>
+		</header>
+	
+		
+		<main>
+			<section class="home">
+				<div class="container">
+					<div class="home__wrapper">
+						<h1 class="home__title"><span>Lorem ipsum</span> dolor sit<br> amet consectetur<span> adipiscing</span></h1>
+						<p class="home__subtitle">At vero eos et accusamus et iusto odio dignissimos ducimus!</p>
+						<ul class="home__list">
+							<li>Totam rem aperiam eaque ipsa</li>
+							<li>Sit voluptatem accusantium doloremque laudantium</li>
+							<li>Sed ut perspiciatis, unde omnis iste natus error</li>
+						</ul>
+						<div class="home__buttons">
+							<button class="home__button">заказать</button>
+							<button class="home__button">подробнее</button>
+						</div>
+					</div>
+				</div>
+			</section>
+	
+			<section class="order">
+				<div class="container">
+					<div class="order__wrapper">
+						<div class="order__head">
+							<h2 class="order__title">оформление <span>заказа</span></h2>
+							<p class="order__subtitle">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+						</div>
+						<div class="order__steps step">
+							<div class="step__item">
+								<div class="step__circle">
+									<img src="../images/icon1.svg" alt="">
+								</div>
+								<p class="step__text">Lorem ipsum dolor sit amet
+								</p>
+								<div class="step__dots">
+									<div class="step__dot"></div>
+									<div class="step__dot"></div>
+									<div class="step__dot"></div>
+									<div class="step__dot"></div>
+									<div class="step__dot"></div>
+								</div>
+							</div>
+							<div class="step__item">
+								<div class="step__circle">
+									<img src="../images/icon2.svg" alt="">
+								</div>
+								<p class="step__text">Сonsecteturadipiscing elit
+								</p>
+								<div class="step__dots">
+									<div class="step__dot"></div>
+									<div class="step__dot"></div>
+									<div class="step__dot"></div>
+									<div class="step__dot"></div>
+									<div class="step__dot"></div>
+								</div>
+							</div>
+							<div class="step__item">
+								<div class="step__circle">
+									<img src="../images/icon3.svg" alt="">
+								</div>
+								<p class="step__text">Sed do eiusmod tempor
+								</p>
+								<div class="step__dots">
+									<div class="step__dot"></div>
+									<div class="step__dot"></div>
+									<div class="step__dot"></div>
+									<div class="step__dot"></div>
+									<div class="step__dot"></div>
+								</div>
+							</div>
+							<div class="step__item">
+								<div class="step__circle">
+									<img src="../images/icon4.svg" alt="">
+								</div>
+								<p class="step__text">Esse cillum dolore eu fugiat
+								</p>
+								<div class="step__dots">
+									<div class="step__dot"></div>
+									<div class="step__dot"></div>
+									<div class="step__dot"></div>
+									<div class="step__dot"></div>
+									<div class="step__dot"></div>
+								</div>
+							</div>
+							<div class="step__item">
+								<div class="step__circle">
+									<img src="../images/icon5.svg" alt="">
+								</div>
+								<p class="step__text">Excepteur sint occaecat cupidatat non proident</p>
+								<!-- <div class="step__dots">
+									<div class="step__dot"></div>
+									<div class="step__dot"></div>
+									<div class="step__dot"></div>
+									<div class="step__dot"></div>
+									<div class="step__dot"></div>
+								</div> -->
+							</div>
+						</div>
+						
+
+						<form action="#" class="order__form form">
+							<div class="form__item-top">
+								<div class="form__dropdown dropdown">
+									<button type="button" class="dropdown__button">Выбирете тип системы</button>
+									<ul class="dropdown__list">
+										<li class="dropdown__list-item" data-value="travel">Sed ut perspiciatis</li>
+										<li class="dropdown__list-item" data-value="lessons">Nemo enim ipsam</li>
+										<li class="dropdown__list-item" data-value="photo">Et harum quidem</li>
+										<li class="dropdown__list-item" data-value="sport">Temporibus autem</li>
+										<li class="dropdown__list-item" data-value="sport">Itaque earum rerum</li>
+										<li class="dropdown__list-item" data-value="travel">Sed ut perspiciatis</li>
+										<li class="dropdown__list-item" data-value="lessons">Nemo enim ipsam</li>
+										<li class="dropdown__list-item" data-value="photo">Et harum quidem</li>
+										<li class="dropdown__list-item" data-value="sport">Temporibus autem</li>
+										<li class="dropdown__list-item" data-value="sport">Itaque earum rerum</li>
+									</ul>
+									<input type="text" name="select-category" value="" class="dropdown__input-hidden" >
+								</div>
+								<input type="email" class="form__input-mail" data-required="true" placeholder="Ваш e-mail">
+								<input type="text" class="form__input-name" data-required="true" data-max-length="11" data-min-length="2" placeholder="Ваше имя">
+							</div>
+							<div class="form__item-bottom">
+								<div class="form__range-wrapper">
+									<input type="range" class="form__input-range">
+									<div class="form__wrapper-value">
+										<span class="form__range-text">Sed ut perspiciatis, unde omnis iste natus</span>
+										<div class="form__value-content">
+											<span id="value"></span>
+											<span>%</span>
+										</div>
+									</div>
+								</div>
+								<div class="form__button-wrapper">
+									<label for="button-file" class="form__button-file">
+										<img src="../images/file.svg" alt="file">
+										<span>прикрепить файл</span>
+									</label>
+									<input type="file" id="button-file" class="form__input-file">
+								</div>
+							</div>
+							<div class="form__wrapper-button">
+								<button tupe="button" class="form__button" disabled>отправить</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+	
+	
+		<footer class="footer">
+			<div class="container footer__container">
+				<p class="footer__copyright">© 2018 «LoremIpsum.net» Все права защищены.
+				</p>
+				<address class="footer__payments payments">
+					<div class="payments__item">
+						<img src="../images/qiwi.svg" alt="">
+						Qiwi wallet
+					</div>
+					<div class="payments__item">
+						<img src="../images/yandex.svg" alt="">
+						Yandex Money
+					</div>
+					<div class="payments__item">
+						<img src="../images/webmoney.svg" alt="">
+						Web Money
+					</div>
+				</address>
+				<address class="contacts footer__contacts">
+					<a class="contacts__link" href="mailto:info@ipsum12345.com">
+						<img src="../images/mail.svg" alt="">
+						info@ipsum228.com
+					</a>
+					<a class="contacts__link" href="https://vk.com/">
+						<img src="../images/vk.svg" alt="">
+						Мы вконтакте
+					</a>
+				</address>
+			</div>
+		</footer>
+	</div>
+	
+	<script src="../script.js"></script>
+</body>
+</html>
