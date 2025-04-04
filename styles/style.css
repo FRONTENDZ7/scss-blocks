@@ -101,6 +101,12 @@ legend {
   flex-wrap: wrap;
 }
 
+.form__button, .form__button-file {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 header .header__popup-menu ul {
   display: flex;
   flex-direction: column;
@@ -209,7 +215,7 @@ header .header__burger.active span:last-child {
 }
 header .header__popup-menu {
   position: absolute;
-  top: 84px;
+  top: 70px;
   right: -100%;
   width: 55%;
   height: 50vh;
@@ -234,6 +240,9 @@ header .header__popup-menu ul {
   header .header__logo img {
     max-width: 200px;
     height: 30px;
+  }
+  header .header__popup-menu {
+    top: 79px;
   }
 }
 
@@ -302,7 +311,7 @@ header .header__popup-menu ul {
 
 @media (max-width: 850px) {
   .home__wrapper {
-    padding: 150px 0;
+    padding: 100px 0 60px 0;
   }
   .home__title {
     font-size: 30px;
@@ -337,10 +346,10 @@ header .header__popup-menu ul {
   .home__buttons {
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
   }
   .home__button {
-    max-width: 155px;
+    max-width: 350px;
   }
 }
 .order {
@@ -558,12 +567,9 @@ header .header__popup-menu ul {
   max-width: 368px;
 }
 .form__button-file {
-  padding: 12px 90px;
   background: #fff;
   width: 100%;
   height: 48px;
-  display: flex;
-  align-items: center;
   gap: 10px;
   border-radius: 3px;
 }
@@ -578,8 +584,8 @@ header .header__popup-menu ul {
   text-transform: uppercase;
   background-color: #3E9CDC;
   width: 100%;
+  height: 48px;
   max-width: 360px;
-  padding: 18px 0;
   border: 1px solid #fff;
   border-radius: 3px;
 }
@@ -612,9 +618,6 @@ header .header__popup-menu ul {
   }
 }
 @media (max-width: 375px) {
-  .form__button-file {
-    padding: 12px 55px;
-  }
   .form__wrapper-value {
     font-size: 12px;
   }
@@ -638,7 +641,7 @@ header .header__popup-menu ul {
   padding-left: 20px;
   padding-right: 35px;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 20px;
   cursor: pointer;
 }

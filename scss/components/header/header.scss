@@ -73,7 +73,7 @@ header {
     }
     .header__popup-menu {
         position: absolute;
-        top: 84px;
+        top: 70px;
         right: -100%;
         width: 55%;
         height: 50vh;
@@ -99,6 +99,9 @@ header {
         .header__logo img {
             max-width: 200px;
             height: 30px;
+        }
+        .header__popup-menu {
+            top: 79px;
         }
     }
 }
