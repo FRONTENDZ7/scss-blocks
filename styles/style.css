@@ -759,18 +759,22 @@ header .header__popup-menu ul {
   line-height: 16px;
   color: #fff;
 }
+.footer__payments {
+  gap: 30px;
+}
 .footer__payments a {
   color: #c3c3c3;
   gap: 7px;
 }
+.footer__contacts {
+  gap: 30px;
+}
+
 .payments__item {
   font-weight: 400;
   font-size: 13px;
   line-height: 16px;
   color: #c3c3c3;
-}
-.payments__item:not(:last-child) {
-  margin-right: 38px;
 }
 
 .payments::before {
@@ -796,11 +800,14 @@ header .header__popup-menu ul {
   font-size: 13px;
   line-height: 16px;
   color: #fff;
-}
-.contacts__link:not(:last-child) {
-  margin-right: 38px;
+  gap: 8px;
 }
 
+@media (max-width: 1111px) {
+  .footer__payments {
+    gap: 15px;
+  }
+}
 @media (max-width: 1055px) {
   .footer__container {
     flex-direction: column-reverse;
