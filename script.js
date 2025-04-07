@@ -1,7 +1,7 @@
 const popupMenu = document.querySelector('#popup-menu');
 const menuList = document.querySelector("#nav-list").cloneNode(1);
 const burgerBtn = document.querySelector('.header__burger');
-// const body = document.body;
+
 
 function renderPopup() {
     popupMenu.appendChild(menuList);
@@ -11,7 +11,6 @@ function hambHandler(e) {
     e.preventDefault();
     popupMenu.classList.toggle('open');
     burgerBtn.classList.toggle('active');
-    // body.classList.toggle('lock');
     renderPopup();
 };
 
@@ -35,15 +34,14 @@ document.querySelectorAll('.dropdown').forEach(function (dropDownWrapper) {
 	const dropDownInput = dropDownWrapper.querySelector('.dropdown__input-hidden');
 
 	// Клик по кнопке. Открыть/Закрыть select
-	dropDownBtn.addEventListener('click', function (e) {
+	dropDownBtn.addEventListener('click', function () {
 		dropDownList.classList.toggle('dropdown__list--visible');
         this.classList.add('dropdown__button--active');
 	});
 
 	// Выбор элемента списка. Запомнить выбранное значение. Закрыть дропдаун
 	dropDownListItems.forEach(function (listItem) {
-		listItem.addEventListener('click', function (e) {
-			// e.stopPropagation();
+		listItem.addEventListener('click', function () {
 			dropDownBtn.innerText = this.innerText;
 			dropDownBtn.focus();
 			dropDownInput.value = this.dataset.value;
