@@ -12,7 +12,7 @@
 
 
 **Ссылка на GitHub Pages:**
-*https://frontendz7.github.io/scss-blocks/pages/index.html*
+*https://frontendz7.github.io/scss-blocks/pages*
 
 ---
 
